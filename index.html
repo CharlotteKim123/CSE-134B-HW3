@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Draft for portfolio website" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Charlotte Kim's Portfolio</title>
+	<link href="computercode.jpeg" rel="icon" />
+	<script>
+    class HTML extends HTMLElement {
+      connectedCallback() {
+        this.innerHTML = `<h1>Hello, World!</h1>`;
+      }
+    }
+    customElements.define('hello-world', HelloWorld);
+		console.log("Hello World!");
+	</script>
+</head>
+
+<body>
+	<header>
+  <h1><b>Charlotte Kim's Portfolio</b></h1>
+
+    <details>
+	<summary>
+		My Portfolio
+	</summary>
+	
+	<p>
+		My portfolio for recruiters
+	</p>
+    </details>
+		
+    <h2><i>About</i></h2>
+      <textarea id="bio" name="bio" rows="5" cols="60">My Bio</textarea>
+    <h3><strong>Account<strong></h3>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Log In:</legend>
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="pWord">Password:</label>
+        <input type="text" id="pWord" name="pWord"><br><br>
+        <input type="submit" value="Log In">
+      </fieldset>
+    </form>
+    <h4><code>Projects</code></h4>
+    <p><a href="https://github.com/CharlotteKim123">My Github</a></p>
+    <iframe src="https://github.com/CharlotteKim123" title="CharlotteKim123 Github"></iframe>
+    <aside> 
+        <h1><em>Contact</em></h1> 
+        <p><span style="color:blue;font-weight:bold">Email</span> <br> <span style="color:blue;font-weight:bold">Phone Number</span></p>
+    </aside> 
+
+    <address>
+	My address
+    </address>
+
+    <hgroup>
+	<p>California</p>
+    </hgroup>
+    
+    <hr>
+      
+    <pre>
+      I am a computer science
+      major with a minor in
+      Entrepreneurship and 
+      Innovation.
+    </pre>
+
+    <p>I go to <abbr title="University of Califonia San Diego">WHO</abbr> for college.</p>
+    <p><dfn>UCSD</dfn> is a very <kbd>prestigious</kbd>kbd> college.</p>
+
+    <ul>
+      <li>Female</li>
+      <li>20 years old</li>
+      <li>Korean</li>
+    </ul>
+
+    <dl>
+	<dt>Family</dt>
+	<dd>Parents and younger sister</dd>
+	<dt>Pets</dt>
+	<dd>Yorkie dog</dd>
+    </dl>
+
+    <form action="/action_page.php" method="get">
+      <label for="year">My school year:</label>
+      <input list="years" name="year" id="year">
+      <datalist id="years">
+        <option value="Freshman">
+        <option value="Sophomore">
+        <option value="Junior">
+        <option value="Senior">
+      </datalist>
+      <input type="submit">
+    </form>
+    
+    <form action="/action_page.php">
+      <label for="college">My College:</label>
+      <select name="College" id="college">
+        <option value="UCSD">UCSD</option>
+        <option value="UCLA">UCLA</option>
+        <option value="UC Berkeley">UCBerkeley</option>
+        <option value="UCI">UCI</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+      
+    <ol>
+      <li>I have a Microsoft certification</li>
+      <li>Started with Robotics</li>
+      <li>Can use many CS languages</li>
+    </ol>
+
+    <search>
+	<form>
+	   <input name="lang" id="lang" placeholder="Search Languages">
+	</form>
+    </search>
+
+    <dialog open>I am a part of ACM and IDEA</dialog>
+
+    <p>
+        I <del>love</del>
+        <ins>computer</ins> science 
+    </p>
+
+    <optgroup label="CS Languages Examples">
+      <option value="Java">Java</option>
+      <option value="Python">Python</option>
+    </optgroup>
+
+    <button onclick="showContent()">Show hidden content</button>
+	    
+    <template>
+	<h6>Code</h6>
+	<img src="computercode.jpeg" width="100" height="100">
+    </template>
+	    
+    <picture>
+      <source media="(min-width:650px)" srcset="computercode.jpeg">
+      <img src="computercode.jpeg" alt="code on computer" style="width:auto;">
+    </picture>
+	    
+    <figure>
+	<img src="computercode.jpeg" alt="computercode" style="width:100%">
+	<figcaption>Code on computer</figcaption>
+    </figure>
+
+    <blockquote cite="https://jeremy-mcgilvrey.medium.com/life-is-the-most-difficult-exam-f745dbfc66ca#:~:text=Life%20is%20the%20most%20difficult%20exam%2C%20many%20people%20fail%20because,compare%20yourself%20to%20someone%20else.">
+	    Life is the most difficult exam, many people fail because they try to 
+	    copy others, not realizing that everyone has a different question paper.
+    </blockquote>
+	    
+    <p><cite>Quote</cite> from Medium.com.</p>
+
+    <audio controls>
+      <source src="windows-xp-startup.mp3" type="audio/mpeg">
+    </audio>
+
+    <video width="320" height="240" controls>
+      <source src="alb_datastream1007_1080p_24fps (1).mp4" type="video/mp4">
+    </video>
+
+    <style>
+    table, th, td {
+	border: 1px solid black;
+    }
+    </style>
+  
+    <h6>The table element</h6>
+    <table>
+	<colgroup>
+	   <col span="2" style="background-color:blue">
+	   <col style="background-color:blue">
+	</colgroup>
+	<caption>Internship Availability and Pay</caption>
+	<tr>
+	   <th>Start/End Date</th>
+	   <th>Pay</th>
+	</tr>
+	<tr>
+	   <td>June 16th</td>
+	   <td>$20 per hour</td>
+	</tr>
+	<tr>
+	   <td>September 16th</td>
+	   <td>$20 per hour</td>
+	</tr>
+    </table>
+
+    <canvas id="Canvas" width="100" height="50" style="border:1px solid #000000;"></canvas>
+
+    <svg width="50" height="50">
+      <circle cx="25" cy="25" r="16" stroke="red" stroke-width="4" fill="blue" />
+    </svg>
+
+
+		<section id="page-load-component">
+			<div id="load-info" style="display: none;">
+				<output id="page-load-info">Measuring...</output>
+			</div>
+			<script>
+				document.getElementById('load-info').style.display = 'block';
+			</script>
+			<noscript class="error">Error: JavaScript required for page timing measurement </noscript>
+		</section>
+	</header>
+
+	<footer>
+		<hr/>
+		<p>This page was made by Charlotte Kim</p>
+	</footer>
+</body>
+
+</html>
