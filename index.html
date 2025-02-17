@@ -22,6 +22,35 @@
 
 <body>
 	<header>
+<style> 
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+h1 {
+  padding: 80px;
+  align-items: flex-start;
+  align-items: center;
+  color: white;
+  width: 700px;
+  height: 300px;
+  background-color: pink;
+  animation-name: head;
+  animation-duration: 6s;
+}
+
+@keyframes head {
+  from {background-color: pink;}
+  to {background-color: magenta;}
+}
+</style>
   <h1><b>Charlotte Kim's Portfolio</b></h1>
 
     <details>
@@ -75,42 +104,7 @@
     <p>I go to <abbr title="University of Califonia San Diego">WHO</abbr> for college.</p>
     <p><dfn>UCSD</dfn> is a very <kbd>prestigious</kbd>kbd> college.</p>
 
-    <ul>
-      <li>Female</li>
-      <li>20 years old</li>
-      <li>Korean</li>
-    </ul>
-
-    <dl>
-	<dt>Family</dt>
-	<dd>Parents and younger sister</dd>
-	<dt>Pets</dt>
-	<dd>Yorkie dog</dd>
-    </dl>
-
-    <form action="/action_page.php" method="get">
-      <label for="year">My school year:</label>
-      <input list="years" name="year" id="year">
-      <datalist id="years">
-        <option value="Freshman">
-        <option value="Sophomore">
-        <option value="Junior">
-        <option value="Senior">
-      </datalist>
-      <input type="submit">
-    </form>
     
-    <form action="/action_page.php">
-      <label for="college">My College:</label>
-      <select name="College" id="college">
-        <option value="UCSD">UCSD</option>
-        <option value="UCLA">UCLA</option>
-        <option value="UC Berkeley">UCBerkeley</option>
-        <option value="UCI">UCI</option>
-      </select>
-      <br><br>
-      <input type="submit" value="Submit">
-    </form>
       
     <ol>
       <li>I have a Microsoft certification</li>
@@ -118,11 +112,7 @@
       <li>Can use many CS languages</li>
     </ol>
 
-    <search>
-	<form>
-	   <input name="lang" id="lang" placeholder="Search Languages">
-	</form>
-    </search>
+    
 
     <dialog open>I am a part of ACM and IDEA</dialog>
 
@@ -131,11 +121,7 @@
         <ins>computer</ins> science 
     </p>
 
-    <optgroup label="CS Languages Examples">
-      <option value="Java">Java</option>
-      <option value="Python">Python</option>
-    </optgroup>
-
+    
     <button onclick="showContent()">Show hidden content</button>
 	    
     <template>
@@ -153,53 +139,14 @@
 	<figcaption>Code on computer</figcaption>
     </figure>
 
-    <blockquote cite="https://jeremy-mcgilvrey.medium.com/life-is-the-most-difficult-exam-f745dbfc66ca#:~:text=Life%20is%20the%20most%20difficult%20exam%2C%20many%20people%20fail%20because,compare%20yourself%20to%20someone%20else.">
-	    Life is the most difficult exam, many people fail because they try to 
-	    copy others, not realizing that everyone has a different question paper.
-    </blockquote>
-	    
-    <p><cite>Quote</cite> from Medium.com.</p>
-
-    <audio controls>
-      <source src="windows-xp-startup.mp3" type="audio/mpeg">
-    </audio>
-
-    <video width="320" height="240" controls>
-      <source src="alb_datastream1007_1080p_24fps (1).mp4" type="video/mp4">
-    </video>
-
+    
     <style>
     table, th, td {
 	border: 1px solid black;
     }
     </style>
   
-    <h6>The table element</h6>
-    <table>
-	<colgroup>
-	   <col span="2" style="background-color:blue">
-	   <col style="background-color:blue">
-	</colgroup>
-	<caption>Internship Availability and Pay</caption>
-	<tr>
-	   <th>Start/End Date</th>
-	   <th>Pay</th>
-	</tr>
-	<tr>
-	   <td>June 16th</td>
-	   <td>$20 per hour</td>
-	</tr>
-	<tr>
-	   <td>September 16th</td>
-	   <td>$20 per hour</td>
-	</tr>
-    </table>
-
-    <canvas id="Canvas" width="100" height="50" style="border:1px solid #000000;"></canvas>
-
-    <svg width="50" height="50">
-      <circle cx="25" cy="25" r="16" stroke="red" stroke-width="4" fill="blue" />
-    </svg>
+    
 
 
 		<section id="page-load-component">
