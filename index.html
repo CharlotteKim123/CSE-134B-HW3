@@ -48,20 +48,19 @@ h1 {
 }
 
 h2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+   width: 400px;
+}
+
+h3 {
   display: flex;
   padding: 80px;
   align-items: center;
   justify-content: center;
   color: black;
-  order: -1;
-}
-
-h3 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 400px;
-   width: device-width;
 }
 
 @keyframes head {
@@ -70,10 +69,10 @@ h3 {
 }
 </style>
   <h1><b>Charlotte Kim's Portfolio</b></h1>
-  <h2><b>About Me</b></h2>
-  <h3>
+  <h2>
       <img src="IMG_2480 (1).jpg" alt="Picture of me" style="width:auto;">
-  </h3>
+  </h2>
+  <h3><b>About Me</b></h3>
 		
       <textarea id="bio" name="bio" rows="5" cols="60">My Bio</textarea>
     <h4><strong>Account<strong></h4>
