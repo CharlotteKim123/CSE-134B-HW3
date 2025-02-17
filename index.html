@@ -47,24 +47,34 @@ h1 {
   animation-duration: 6s;
 }
 
+h2 {
+  display: flex;
+  padding: 80px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+picture {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 400px;
+   width: device-width;
+}
+
 @keyframes head {
   from {background-color: pink;}
   to {background-color: magenta;}
 }
 </style>
   <h1><b>Charlotte Kim's Portfolio</b></h1>
-
-    <details>
-	<summary>
-		My Portfolio
-	</summary>
-	
-	<p>
-		My portfolio for recruiters
-	</p>
-    </details>
+  <h2><b>About Me</b></h2>
+  <picture>
+      <source media="(min-width:650px)" srcset="IMG_2480 (1).jpg">
+      <img src="IMG_2480 (1).jpg" alt="Picture of me" style="width:auto;">
+  </picture>
 		
-    <h2><i>About</i></h2>
       <textarea id="bio" name="bio" rows="5" cols="60">My Bio</textarea>
     <h3><strong>Account<strong></h3>
     <form action="/action_page.php">
