@@ -21,7 +21,6 @@
 </head>
 
 <body>
-<div style="height:100lvh;flex:1;background:#f5f5dc;">100lvh</div>
 	<header>
 <style> 
 * {
@@ -29,8 +28,9 @@
 }
 
 sizing {
-  background-color: lightgrey;
+  background-color: lightgray;
   padding: 20px;
+  height: 100dvh;
 }
 
 @media screen and (min-width: 700px) {
@@ -149,8 +149,16 @@ h6 {
     
   <h4><b>Projects</b></h4>
     <h5><a href="https://github.com/CharlotteKim123">My Github</a></h5>
-    <iframe src="https://github.com/CharlotteKim123" title="CharlotteKim123 Github"></iframe>
-   <h6><em>Contact</em></h6> 
+	<picture>
+	     <source media="(min-width:650px)" srcset="computercode.jpeg">
+	     <img src="Screenshot 2025-02-16.png" alt="emotion detector" style="width:device-width;">
+        </picture>
+	<p>The emotion detecter allows one to see the overall review of a product (i.e. Amazon product).
+	All you have to do is input the link to the product into the given text box. The website will then
+	return the product's overall word cloud, positive word cloud, negative word cloud, a bar graph and a circle
+	graph showing the positive vs negative reviews, and the overall review of the product.</p>
+    
+   <h6><b>Contact</b></h6> 
         <h7><span style="color:pink;font-weight:bold">Email: charlottehkim@gmail.com</span> <br> <span style="color:pink;font-weight:bold">Phone Number: 661-673-3588</span></h7>
 
     
